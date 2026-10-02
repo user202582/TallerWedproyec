@@ -1,0 +1,278 @@
+body {
+    background-color: #f4f1ea;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #6b4f3a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+nav {
+    background-color: #8a684d;
+}
+
+nav ul {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+}
+
+nav li {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #5a4030;
+    transform: scale(1.08);
+}
+
+main {
+    width: 85%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+.contenido-principal {
+    width: 68%;
+    display: inline-block;
+    vertical-align: top;
+}
+article {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #cccccc;
+}
+aside {
+    width: 24%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 2%;
+    background-color: #e8dfd3;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow-wrap: break-word;  /*-------------------------*/
+}
+aside h3 {
+    color: #6b4f3a;
+}
+
+h2 {
+    color: #6b4f3a;
+    border-bottom: 2px solid #c5a880;
+    padding-bottom: 8px;
+}
+h3 {
+    color: #6b4f3a;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+li {
+    margin: 8px;
+}
+
+a {
+    color: #6b4f3a;
+}
+article a,
+aside a {
+    font-weight: bold;
+}
+article a:hover,
+aside a:hover {
+    color: #8a684d;
+}
+/*tablas*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+/*título de la tabla*/
+caption {
+    caption-side: top;
+    font-size: 18px;
+    font-weight: bold;
+    color: #6b4f3a;
+    padding: 10px;
+}
+/*celdas*/
+th,
+td {
+    border: 1px solid #b99b76;
+    padding: 12px;
+    text-align: center;
+}
+/*encabezados*/
+th {
+    background-color: #6b4f3a;
+    color: white;
+    font-weight: bold;
+}
+/*filas*/
+tbody tr:nth-child(even) {
+    background-color: #f4eee6;
+}
+/*efecto al pasar el mouse*/
+tbody tr:hover {
+    background-color: #e8dfd3;
+}
+/*multimedia*/
+.multimedia {
+    clear: both;
+    background-color: white;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px #cccccc;
+}
+.multimedia img {
+    width: 80%;
+    max-width: 700px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+.multimedia audio {
+    width: 80%;
+    max-width: 600px;
+    margin: 10px auto 25px auto;
+}
+.multimedia video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+/*formulario*/
+.contacto-contenido {
+    width: 68%;
+    display: inline-block;
+    vertical-align: top;
+}
+form {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f8f5ef;
+    border: 1px solid #d5c8b8;
+    padding: 20px;
+    border-radius: 10px;
+}
+/*fieldset*/
+fieldset {
+    border: 2px solid #b99b76;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+legend {
+    color: #6b4f3a;
+    font-weight: bold;
+    padding: 0 8px;
+}
+/*etiquetas*/
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #4b3a2e;
+}
+/*campos del formulario*/
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cfc3b5;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: white;
+}
+textarea {
+    resize: vertical;
+}
+/*radio y checkbox*/
+.opciones {
+    margin-bottom: 15px;
+}
+.opciones label {
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 15px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 11px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px;
+}
+input[type="submit"] {
+    background-color: #6b4f3a;
+    color: white;
+}
+input[type="reset"] {
+    background-color: #c5a880;
+    color: white;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    opacity: 0.85;
+}
+
+footer {
+    background-color: #6b4f3a;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+footer p {
+    margin: 5px;
+}
